@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<body>
+    @using(Html.BeginForm("register","Home",FormMethod.Post, new{ @class="container1" }))
+    {
+
+<h2>Employee Registration</h2>
+<style>
+table {
+  border-spacing: 30px;
+}
+</style>
+
+ <table style="width:100%">
+        <tr>
+            <td>
+<input class="fname" type="text" name="fname" placeholder="EmployeeFirstName">
+</td>
+</tr>
+<tr>
+            <td>
+<input type="text" name="elname" placeholder="Employeelastname">
+</td>
+</tr>
+<tr>
+            <td>
+<input type="email" name="eaddress" placeholder="Email">
+</td>
+</tr>
+<tr>
+            <td>
+<input type="text" name="eaddress" placeholder="EmployeeAddress">
+</td>
+</tr>
+<tr>
+            <td>
+<input type="text" name="erole" placeholder="EmployeeRole">
+</td>
+</tr>
+
+<tr>
+            <td>
+<input type="tel" name="phname" placeholder="Phonenumber">
+</td>
+</tr>
+<tr>
+            <td>
+<input type="password" name="pname" placeholder="Password">
+</td>
+</tr>
+
+@*
+</div>*@
+<tr>
+            <td>
+<div class="checkbox">
+    </td>
+</tr>
+    <tr>
+            <td>
+<input type="checkbox" name="checkbox"><span class="terms">I agree to the</span> <a asp-controller ="Home" asp-action ="Privacy">Privacy Policy for EMS Portal</a>
+</td>
+</tr>
+@*</div>*@
+<tr>
+            <td>
+<button type="Submit" href="/">Submit</button>
+</td>
+</tr>
+</table>
+
+}</body>
+</html>
